@@ -17,7 +17,7 @@ const BaseInput = styled.input`
     &:focus{
         box-shadow: none;
         border-color: ${props => props.theme['green-500']};
-    }
+    }    
 `;
 
 export const TaskInput = styled(BaseInput)`
@@ -42,4 +42,15 @@ export const FormContainer = styled.div`
     font-size: 1.125rem;
     font-weight: bold;
     flex-wrap: wrap;
+    
+
+    @media (max-width: 600px){
+        flex-direction: column;
+    }
+
+    div{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
 `;

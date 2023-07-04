@@ -23,7 +23,7 @@ export function Countdown(){
       interval = setInterval(() => {
         const secondsDifference = differenceInSeconds(
           new Date(), 
-          activeCycle.startDate,
+          new Date(activeCycle.startDate),
         );
 
         if(secondsDifference >= totalSecondsActiveCycle){
@@ -57,11 +57,16 @@ export function Countdown(){
 
     return (        
         <CountDownContainer>
-          <span>{minutes[0]}</span>
-          <span>{minutes[1]}</span>
+          <div>
+            <span>{minutes[0]}</span>
+            <span>{minutes[1]}</span>
+          </div>
           <Separator>:</Separator>
-          <span>{seconds[0]}</span>
-          <span>{seconds[1]}</span>
+          <div>
+            <span>{seconds[0]}</span>
+            <span>{seconds[1]}</span>
+          </div>
+          
         </CountDownContainer>
     );
 }

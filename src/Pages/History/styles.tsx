@@ -11,12 +11,20 @@ export const HistoryContainer = styled.main`
         font-size: 1.5rem;
         color: ${props => props.theme['gray-100']};
     }
+
+    @media (max-width: 600px){
+        padding-top: 1.75rem;
+        padding-bottom: 0;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 `;
 
 export const HistoryList = styled.div`
     display: flex;
     flex: 1;
-    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 320px;
     margin-top: 2rem;
 
     table{
@@ -51,12 +59,23 @@ export const HistoryList = styled.div`
             line-height: 1.6;
 
             &:first-child{
-                padding-left: 1.5rem;
-                width: 50%;
+                padding-left: 1.5rem;                
+                width: fit-content;
+                width: 50%;                
             }
 
             &:last-child{
                 padding-right: 1.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 830px) {
+        table{
+            td{
+                &:first-child{
+                    width: max-content;
+                }
             }
         }
     }

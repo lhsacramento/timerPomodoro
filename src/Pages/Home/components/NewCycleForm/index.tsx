@@ -28,18 +28,21 @@ export function NewCycleForm(){
             disabled={!!activeCycle}
           />
 
-          <label htmlFor="minutesAmout">durante</label>
-          <MinutesAmoutInput             
-            maxLength={2} 
-            step={5} 
-            min={5}
-            max={60} 
-            type="number" 
-            id="minutesAmout" 
-            placeholder="00"
-            {...register('minutesAmout',{valueAsNumber: true})}
-            disabled={!!activeCycle}
-          />
+          <div>
+            <label htmlFor="minutesAmout">durante</label>
+            <MinutesAmoutInput             
+              maxLength={2} 
+              step={5} 
+              min={5}
+              max={60} 
+              type="number" 
+              id="minutesAmout" 
+              placeholder="00"
+              {...register('minutesAmout',{valueAsNumber: true})}
+              disabled={!!activeCycle}
+            />
+          </div>
+          
 
         </FormContainer>
     )
