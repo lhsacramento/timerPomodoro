@@ -1,18 +1,23 @@
-# Coffee Delivery
+# PomoTimer
 ### Link do Projeto
-Esse site foi hospedado no vercel lincando diretamente com o github. Clique aqui para acessar o site
+Esse site foi hospedado no vercel lincando diretamente com o github. [Clique aqui para acessar o site](https://lh-pomotimer.vercel.app)
 
 ### Sobre o Projeto
-Este site, foi desenvolvido a partir de um desafio no curso da rocketseat onde eles disponibilizaram o figma do projeto com todos os recursos gráficos necessários para a criação do mesmo.
+Este site, foi desenvolvido em aula, usando a técnica pomodoro como base. A ideia era criar um timer para gerenciar e controlar o tempo durante u uso da ténica.
 
 ### Desafios do Projeto
-Este projeto, por mais que ainda não tenha sido integrado ao backend, já tentei deixar tudo preparado para isso acontecer. Usei o json para buscar e guardar informações como preço, quantidade, categoria ou até mesmo a descrição dos cafés. Além disso o site também está totalmente responsivo funcionando em diversos dispositivos diferentes. Esse também foi um desafio bem legal, pois consegui adaptar diferentes layouts e trabalhar bem essa parte de responsividade usando mediaqueries e unidades de medidas como o próprio rem.
+Nesse teve algo super legal que eu ainda não tinha trabalhado. Esse projeto foi integrado diretamente com o storage do próprio navegador onde armazeno as informações dos timer's que foram iniciados (concluídos ou não).
 
-### Tecnologias Utilizadas
-Criação: Vite e React
---> O vite é uma ferramenta que adorei trabalhar. Ele é muito performático além de ajudar bastante no desenvolvimento do projeto.
+## Tecnologias Utilizadas
+### Criação: Vite e React
 ### Linguagem: Typescript;
-### Estilização: Styled-components
---> Para a organização e integração do CSS preferi utilizar a biblioteca styled-components que facilita muito na parte de estilização e também faz com que não haja sobreposição de css em um componente.
-### Formulários: Imask e React-hook-form;
+### Estilização: Styled-components;
+### Formulários: React-hook-form;
 ### Rotas e Paginas: React-router-dom;
+### Manipulação de datas: Date-fns;
+
+
+## Imagens do Projeto
+
+<img src='https://i.imgur.com/hTHs1qm.png' width='800px'>
+<img src='https://i.imgur.com/VZk0oFt.png' width='800px'>
